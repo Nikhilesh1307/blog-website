@@ -34,7 +34,12 @@ function Registration() {
   }
 
   return (
-    <div className="login-page">
+    <div
+      className="login-page"
+      style={{
+        backgroundImage: `url(${import.meta.env.BASE_URL}media/Signup.jpg)`,
+      }}
+    >
       <form
         className="login-form d-flex flex-column row-gap-2 justify-content-center"
         onSubmit={handleSubmit}

@@ -14,7 +14,7 @@ function Home () {
         <div className="d-flex justify-content-between">
             <Link className="home-link" to={'/blogs/Programming'}>
                  <div className="card" style={{width: '18rem'}}>
-                 <img src="/media/programming.jpg" className="card-img-top" alt="..."/>
+                 <img src={`${import.meta.env.BASE_URL}media/programming.jpg`} className="card-img-top" alt="..."/>
                  <div className="card-body">
                      <h5 className="card-title">Programming</h5>
                  </div>
@@ -22,7 +22,7 @@ function Home () {
             </Link>
             <Link className="home-link" to={'/blogs/Cooking'} >
                   <div className="card" style={{width: '18rem'}}>
-                 <img src="/media/cooking.jpg" className="card-img-top" alt="..."/>
+                 <img src={`${import.meta.env.BASE_URL}media/cooking.jpg`} className="card-img-top" alt="..."/>
                  <div className="card-body">
                      <h5 className="card-title">Cooking</h5>
                  </div>
@@ -30,7 +30,7 @@ function Home () {
             </Link>
             <Link className="home-link" to={'/blogs/Workouts'} >
                <div className="card" style={{width: '18rem'}}>
-                 <img src="/media/Fitness.jpg" className="card-img-top" alt="..."/>
+                 <img src={`${import.meta.env.BASE_URL}media/Fitness.jpg`} className="card-img-top" alt="..."/>
                  <div className="card-body">
                      <h5 className="card-title">WorkOuts</h5>
                  </div>

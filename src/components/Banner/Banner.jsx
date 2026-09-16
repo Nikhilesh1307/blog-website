@@ -1,14 +1,14 @@
 import React from 'react'
 import './Banner.css'
 const bannerByCategory = {
-  Programming: '/media/programming-blog-cover.jpg',
-  Cooking: '/media/cooking-blog-cover.jpg',
-  Workouts: '/media/Workouts-blog-cover.jpg',
-  Travelling: '/media/travelling-blog-cover.jpg',
-  Health: '/media/Health.jpg',
+  Programming: `${import.meta.env.BASE_URL}media/programming-blog-cover.jpg`,
+  Cooking: `${import.meta.env.BASE_URL}media/cooking-blog-cover.jpg`,
+  Workouts: `${import.meta.env.BASE_URL}media/Workouts-blog-cover.jpg`,
+  Travelling: `${import.meta.env.BASE_URL}media/travelling-blog-cover.jpg`,
+  Health: `${import.meta.env.BASE_URL}media/Health.jpg`,
 }
 function Banner({category}){
-  const bannerImage = bannerByCategory[category]||'/media/Banner.jpg';
+  const bannerImage = bannerByCategory[category]||`${import.meta.env.BASE_URL}media/Banner.jpg`;
   const bannerTitle = category?`${category} blogs`:'Welcome to Our Blogs Website';
   return (
     <>
