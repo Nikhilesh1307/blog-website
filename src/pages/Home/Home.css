@@ -1,0 +1,8 @@
+.home-link {
+  text-decoration: none !important;
+}
+
+.home-link * {
+  text-decoration: none !important;
+  color: initial !important; 
+}
