@@ -27,7 +27,7 @@ function TrendingBlog({blog}){
   return (
     <Link className="home-link" to={`/blog/${blog.id}`}>
       <div className="card" style={{width: '18rem'}}>
-           <img src={`/media/${image}`}className="card-img-top" alt="..."/>
+           <img src={`media/${image}`}className="card-img-top" alt="..."/>
            <div className="card-body">
            <h5 className="card-title">{blog.title}</h5>
            <p className="card-text text-muted">{blog.category}</p>
